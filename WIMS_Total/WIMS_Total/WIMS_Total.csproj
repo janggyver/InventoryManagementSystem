@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54209789-5C95-4109-9F3F-7A2E68FA7701}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InventoryP3</RootNamespace>
+    <AssemblyName>WIMS_Total</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddOrderItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrderItems.Designer.cs">
+      <DependentUpon>AddOrderItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdjustInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdjustInventory.Designer.cs">
+      <DependentUpon>AdjustInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInventoryP3.cs" />
+    <Compile Include="FormInventory_New.cs" />
+    <Compile Include="formInventory_New_2.cs" />
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalMethods.cs" />
+    <Compile Include="InventoryP3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryP3.Designer.cs">
+      <DependentUpon>InventoryP3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory_New.Designer.cs">
+      <DependentUpon>Inventory_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListAdjustment.Designer.cs">
+      <DependentUpon>ListAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MgrAddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MgrAddItem.Designer.cs">
+      <DependentUpon>MgrAddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderForWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderForWarehouse.Designer.cs">
+      <DependentUpon>OrderForWarehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderListOnly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderListOnly.Designer.cs">
+      <DependentUpon>OrderListOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersMain.Designer.cs">
+      <DependentUpon>OrdersMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessOrder.Designer.cs">
+      <DependentUpon>ProcessOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductListOnly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductListOnly.Designer.cs">
+      <DependentUpon>ProductListOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products.designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScannerAdjust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScannerAdjust.Designer.cs">
+      <DependentUpon>ScannerAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScannerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScannerLogin.Designer.cs">
+      <DependentUpon>ScannerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScannerMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScannerMain.Designer.cs">
+      <DependentUpon>ScannerMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScannerOrdItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScannerOrdItem.Designer.cs">
+      <DependentUpon>ScannerOrdItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Season.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Season.designer.cs">
+      <DependentUpon>Season.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintainDB.designer.cs">
+      <DependentUpon>MaintainDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shipping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shipping.Designer.cs">
+      <DependentUpon>shipping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TosearchSQL.cs" />
+    <EmbeddedResource Include="AddOrderItems.resx">
+      <DependentUpon>AddOrderItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdjustInventory.resx">
+      <DependentUpon>AdjustInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryP3.resx">
+      <DependentUpon>InventoryP3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory_New.resx">
+      <DependentUpon>Inventory_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListAdjustment.resx">
+      <DependentUpon>ListAdjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MgrAddItem.resx">
+      <DependentUpon>MgrAddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderForWarehouse.resx">
+      <DependentUpon>OrderForWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderListOnly.resx">
+      <DependentUpon>OrderListOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersMain.resx">
+      <DependentUpon>OrdersMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessOrder.resx">
+      <DependentUpon>ProcessOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductListOnly.resx">
+      <DependentUpon>ProductListOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScannerAdjust.resx">
+      <DependentUpon>ScannerAdjust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScannerLogin.resx">
+      <DependentUpon>ScannerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScannerMain.resx">
+      <DependentUpon>ScannerMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScannerOrdItem.resx">
+      <DependentUpon>ScannerOrdItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Season.resx">
+      <DependentUpon>Season.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintainDB.resx">
+      <DependentUpon>MaintainDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="shipping.resx">
+      <DependentUpon>shipping.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
